@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .homepage img {
@@ -12,15 +12,19 @@
   position: absolute;
 }
 
+.nav-bar {
+  position: fixed;
+}
+
 .navbar-links {
   display: flex;
   text-decoration: none;
   width: 100%;
   position: relative;
-  justify-content: space-between;
-  top: 10px;
-  padding: 15px;
-  border: 3px white;
+  justify-content: space-evenly;
+  gap: 20px;
+  background-color: black;
+  padding: 10px;
 }
 
 .navbar-link {
@@ -30,48 +34,120 @@
   width: 10px;
 }
 
-.navbar-link :hover{
+.navbar-link :hover {
   transition: 1s;
   background-color: white;
   color: black;
-  padding: 10px;
+  padding: 7px;
   border-radius: 10%;
 }
 
-h1 {
+.landing-page h1 {
   position: relative;
-  text-align: center;
-  font-weight: 100;
-  font-size: 50px;
-  margin-top: 60px;
-  color: white;
-}
-
-h2 {
-  position: relative;
-  text-align: center;
   font-size: 60px;
-  top: 370px;
+  top: 440px;
   color: white;
+  background-color: black;
 }
 
 .landing p {
   position: relative;
   text-align: center;
   font-size: 60px;
-  top: 370px;
+  top: 440px;
   color: white;
+  background-color: black;
 }
 
 .landing-page img {
-  width: 420px;
-  height: 400px;
-  top: 125px;
-  right: 570px;
   max-width: 100%;
+  object-fit: contain;
+  right: 100px;
+  top: 30px;
+  max-height: 550px;
 }
 
 .landing-page {
   text-align: center;
 }
 
+.about-me img {
+  width: 100%;
+  height: 400px;
+  max-width: 1300px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.about-me h1 {
+  position: relative;
+  top: 420px;
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  text-align: center;
+}
+
+.about-me h3 {
+  position: relative;
+  top: 420px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.about-me h4 {
+  position: absolute;
+  top: 95px;
+  right: 350px;
+  text-align: right;
+  font-size: 30px;
+  word-spacing: 10px;
+}
+
+.about-me h5 {
+  position: absolute;
+  top: 155px;
+  right: 165px;
+  text-align: right;
+  font-size: 30px;
+  word-spacing: 10px;
+}
+
+.about-me h6 {
+  position: absolute;
+  top: 215px;
+  right: 105px;
+  text-align: right;
+  font-size: 30px;
+  word-spacing: 10px;
+}
+
+.about-me h7 {
+  position: relative;
+  top: 600px;
+  font-size: 30px;
+  left: 555px;
+  text-align: center;
+}
+
+.about-me h8 {
+  position: relative;
+  top: 450px;
+  font-size: 30px;
+  left: 410px;
+  text-align: center;
+}
+
+.about-me p {
+  position: relative;
+  top: 450px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.about-me p {
+  position: relative;
+  top: 440px;
+  font-size: 20px;
+  margin-top: 20px;
+}
