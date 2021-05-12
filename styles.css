@@ -5,10 +5,6 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-body{
-  background-color: rgb(29, 124, 233);;
-}
-
 .landing{
   width: 100%;
   background-image: url(https://eskipaper.com/images/dark-wallpaper-8.jpg) ;
@@ -82,63 +78,66 @@ img{
   text-align: center;
 }
 
-.about{
-  margin: 5px 5px 5px 5px;
+.info{
+  align-items: flex-start;
+  padding: 10px;
 }
 
-.container{
-  background-color: white;
-  display: flex;
-}
-
-.about-img img{
-  width: 43vw;
+.contain{
   position: absolute;
+  display: flex;
+  top: 25%;
+}
+
+.contain img{
+  width: 80vh;
   height: 50vh;
-  top: 190px;
-  left: 20px;
+  margin-left: 10px;
+}
+
+.info h1{
+  text-align: center;
+  font-size: 6rem;
+}
+
+.info h2{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.info p{
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 1.5rem;
+}
+
+.me{
+  position: absolute;
+  text-align: center;
+  bottom: 0%;
+}
+
+.me h1{
+  text-align: center;
+  font-size: 4rem;
+}
+
+.me p{
+  font-size: 1.5rem;
+}
+
+.interest{
+  position: absolute;
 
 }
 
-
-
-.information h1{
-  text-align: right;
-
+.interests{
+  bottom: 0;
 }
 
-.information h2{
-  text-align: right;
-}
-
-.information p{
-  text-align: right;
-}
-
-.BI{
-  text-align: right;
-}
-
-.basic-info{
-  text-align: right;
-}
-
-
-
-.BI h3 {
-  text-align: right;
-}
-.BI h4{
-  text-align: right;
-}
-
-.get-to-know-me{
-  background-color: white;
-
-}
-
-.my-interests h1{
-  text-align: right;
+.interested-in{
+  bottom: 0;
 }
 
 .experience{
@@ -150,9 +149,13 @@ img{
   background-color: rgb(29, 124, 233)
 }
 
+.experience h1{
+  font-size: 6rem;
+}
+
+
 .icons{
-  font-size: 10rem;
-  justify-content: space-between;
+  font-size: 8rem;
 }
 
 .my-experience {
