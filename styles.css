@@ -72,11 +72,7 @@ img{
   background-color: black;
 }
 
-.cover-page {
-  object-fit: cover;
-  z-index: -1;
-  width: 100%;
-}
+
 
 .landing-page {
   text-align: center;
@@ -503,6 +499,10 @@ button:hover {
   color: black;
   font-size: 1.5rem;
   padding: 10px;
+}
+
+.details{
+  display: flex;s
 }
 
 

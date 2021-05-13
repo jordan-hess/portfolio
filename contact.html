@@ -10,7 +10,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body4>
+  <body>
     <nav class="navbar">
       <ul class="navbar-links">
         <li class="navbar-link">
@@ -36,81 +36,82 @@
         </li>
       </ul>
     </nav>
+    <div style="display: flex">
+      <form method="POST" id="contact-form">
+        <div class="contact-me-info">
+          <h1 class="contact-heading">Contact Me</h1>
+          <div class="contact-info">
+            <label for="name" class="contact-info"></label>
+            <input
+              type="text"
+              id="name"
+              required
+              name="name"
+              class="contact-input"
+              placeholder="Full Name"
+            />
+          </div>
+          <div class="contact-info">
+            <label for="phone number" class="contact-info"></label>
+            <input
+              type="tel"
+              id="Number"
+              required
+              name="Number"
+              class="contact-input"
+              placeholder="Phone Number"
+            />
+          </div>
+          <div class="contact-info">
+            <label for="email" class="contact-info"></label>
+            <input
+              type="email"
+              id="email"
+              required
+              name="email"
+              class="contact-input"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="contact-info">
+            <label for="Your Message" class="contact-info"></label>
+            <input
+              type="text"
+              type="text"
+              id="Description"
+              required
+              name="Description"
+              class="contact-input"
+              placeholder="Description"
+            />
+          </div>
+        </div>
 
-    <form method="POST" id="contact-form">
-      <div class="contact-me-info">
-        <h1 class="contact-heading">Contact Me</h1>
-        <div class="contact-info">
-          <label for="name" class="contact-info"></label>
-          <input
-            type="text"
-            id="name"
-            required
-            name="name"
-            class="contact-input"
-            placeholder="Full Name"
-          />
+        <div>
+          <button>SEND</button>
         </div>
-        <div class="contact-info">
-          <label for="phone number" class="contact-info"></label>
-          <input
-            type="tel"
-            id="Number"
-            required
-            name="Number"
-            class="contact-input"
-            placeholder="Phone Number"
-          />
-        </div>
-        <div class="contact-info">
-          <label for="email" class="contact-info"></label>
-          <input
-            type="email"
-            id="email"
-            required
-            name="email"
-            class="contact-input"
-            placeholder="Email Address"
-          />
-        </div>
-        <div class="contact-info">
-          <label for="Your Message" class="contact-info"></label>
-          <input
-            type="text"
-            type="text"
-            id="Description"
-            required
-            name="Description"
-            class="contact-input"
-            placeholder="Description"
-          />
-        </div>
-      </div>
-
-      <div>
-        <button>SEND</button>
-      </div>
-    </form>
-    <div class="my-contact">
-      <div class="my-contact-info">
-        <div class="J-contact">
-          <h1>My Contact Details</h1>
-          <div class="details">
-            <div class="number">
-              <i class="fas fa-mobile"></i>
-              <p>Mobile Cell Number: 081 285 9885</p>
-            </div>
-            <div class="address">
-              <i class="fas fa-map-pin"></i>
-              <p>Address: 12 Amity Way, Lansdowne</p>
-            </div>
-            <div class="Email">
-              <i class="fas fa-envelope-square"></i>
-              <p>Email: jchno116012003@gmail.com</p>
+      </form>
+      <div class="my-contact">
+        <div class="my-contact-info">
+          <div class="J-contact">
+            <h1>My Contact Details</h1>
+            <div class="details">
+              <div class="number">
+                <i class="fas fa-mobile"></i>
+                <p>Mobile Cell Number: 081 285 9885</p>
+              </div>
+              <div class="address">
+                <i class="fas fa-map-pin"></i>
+                <p>Address: 12 Amity Way, Lansdowne</p>
+              </div>
+              <div class="Email">
+                <i class="fas fa-envelope-square"></i>
+                <p>Email: jchno116012003@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body4>
+  </body>
 </html>
