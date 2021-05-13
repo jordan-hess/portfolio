@@ -5,6 +5,10 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+body{
+  background-color: rgb(29, 124, 233);
+}
+
 .landing{
   width: 100%;
   background-image: url(https://eskipaper.com/images/dark-wallpaper-8.jpg) ;
@@ -44,10 +48,10 @@ img{
 }
 
 .navbar-link :hover {
-  transition: 1s;
+  transition: .2s;
   background-color: white;
   color: black;
-  padding: 7px;
+  padding: 10px;
   border-radius: 10%;
 }
 
@@ -93,11 +97,12 @@ img{
   width: 80vh;
   height: 50vh;
   margin-left: 10px;
+  border: 5px solid rgb(10, 12, 15);
 }
 
 .info h1{
   text-align: center;
-  font-size: 6rem;
+  font-size: 2rem;
 }
 
 .info h2{
@@ -109,7 +114,7 @@ img{
   margin-top: 40px;
   margin-left: 50px;
   margin-right: 50px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .me{
@@ -120,24 +125,148 @@ img{
 
 .me h1{
   text-align: center;
-  font-size: 4rem;
+  
 }
 
 .me p{
   font-size: 1.5rem;
 }
 
-.interest{
-  position: absolute;
-
-}
-
 .interests{
+  display: grid;
+  grid-template-columns: 1fr 10% 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  text-align: center;
   bottom: 0;
+  height: 200px;
 }
 
-.interested-in{
+.interested-in h1{
   bottom: 0;
+  margin: 20px;
+  font-size: 2.2rem;
+
+}
+
+.line-1 {
+  width: 5px;
+  height: 100%;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background: rgb(5, 7, 8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  margin-left: 35px;
+}
+
+ .camera{
+  grid-column: 3;
+  grid-row: 1;
+  font-size: 20px;
+}
+
+.pen {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 20px;
+}
+
+.basket-ball {
+  grid-column: 3;
+  grid-row: 2;
+  font-size: 20px;
+}
+
+.music {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 20px;
+}
+
+.skill-icons{
+  display: grid;
+  grid-template-columns: 2fr 10% 2fr ;
+  grid-template-rows: repeat(4, 1fr);
+  text-align: center;
+  bottom: 0;
+  height: 700px;
+  margin: 120px;
+}
+
+.leader{
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+}
+
+.html{
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+}
+
+.java{
+  grid-column: 3;
+  grid-row: 1;
+  font-size: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+.toast{
+  grid-column: 3;
+  grid-row: 2s;
+  font-size: 40px;
+  display: flex;
+  gap: 40px;
+}
+
+.wood{
+  grid-column:1 ;
+  grid-row: 3;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+}
+
+.css{
+  grid-column: 3;
+  grid-row: 3;
+  font-size: 40px;
+  display: flex;
+  gap: 40px;
+
+}
+
+.skills{
+  height: 10vh;
+}
+
+.skills header{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.line-2 {
+  width: 10px;
+  height: 60%;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background: rgb(5, 7, 8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  margin-left: 35px;
 }
 
 .experience{
@@ -150,12 +279,13 @@ img{
 }
 
 .experience h1{
-  font-size: 6rem;
+  font-size: 2rem;
 }
 
 
 .icons{
   font-size: 8rem;
+  top: 25%;
 }
 
 .my-experience {
@@ -204,11 +334,189 @@ img{
   padding: 10%;
   margin: 10%;
   background:rgb(29, 124, 233);
-  box-shadow: 0 8px 32px 0 rgb(1, 41, 87)
+  box-shadow: 0 8px 32px 0  rgba(32, 84, 255, 0.959);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
 }
+
+.body-1{
+  font-family: sans-serif;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 5% 10%;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container-3 {
+  display:flex;
+}
+
+.card-heading {
+  font-size: 2rem;
+
+}
+
+.card-container-heading{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.card {
+  width: 50vw;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.959);
+  border-radius: 10%;
+  padding: 1%;
+  color: white;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2%;
+}
+
+.card-buttons {
+  display: flex;
+}
+
+.button {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  transition: all 0.3s linear;
+  width: 49%;
+  margin-right: 1%;
+}
+
+.button:hover {
+  font-size: 1.1em;
+  background: rgba(255, 255, 255, 0.959);
+  color: black;
+}
+
+body4 {
+  min-height: 100vh;
+  align-items: center;
+}
+
+form{
+  display: flex;
+}
+
+
+#contact-form {
+  width: 50vw;
+  height: 90vh;
+  padding: 10%, 20%;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+}
+
+.contact-heading {
+  text-transform: uppercase;
+  padding: 20px;
+  color: black;
+}
+
+.contact-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  color: black;
+}
+
+button {
+  transition-duration: 0.4s;
+  margin: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  background: transparent;
+  padding: 5%, 10%;
+  border: none;
+  border-radius: 200px;
+  box-shadow: 5px 5px 60px black;
+}
+
+.contact-info {
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 10vw;
+}
+
+.card-details img{
+  width: 100%;
+}
+
+.my-contact-info{
+  display: flex;
+  position: absolute;
+  right: 250px;
+  bottom: 270px;
+  align-items: flex-start;
+}
+
+.J-contact h1{
+  color: black;
+  padding: 10px ;
+}
+
+.number{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.address{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.Email{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .card {
+    width: 100%;
+  }
+
 
 /* Media Queries*/
 @media screen and (max-width:) {
