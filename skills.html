@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
@@ -41,33 +42,40 @@
       <header>MY SKILLS</header>
       <div class="my-skills">
         <div class="skill-icons">
-          <div class="leader">
-            <i class="fas fa-users"></i>
+          <div class="leader" data-aos="fade-right">
+            <i class="fas fa-users" ></i>
             <p>Leadership</p>
           </div>
-          <div class="html">
-            <i class="fab fa-html5"></i>
+          <div class="html" data-aos="fade-right">
+            <i class="fab fa-html5" ></i>
             <p>HTML</p>
           </div>
-          <div class="java">
-            <i class="fab fa-js-square"></i>
+          <div class="java" data-aos="fade-left">
+            <i class="fab fa-js-square" ></i>
             <p>JAVASCRIPT</p>
           </div>
-          <div class="css">
-            <i class="fab fa-css3-alt"></i>
+          <div class="css" data-aos="fade-left">
+            <i class="fab fa-css3-alt" ></i>
             <p>CSS</p>
           </div>
-          <div class="toast">
-            <i class="fas fa-bread-slice"></i>
+          <div class="toast" data-aos="fade-left">
+            <i class="fas fa-bread-slice" ></i>
             <p>PUBLIC SPEAKING</p>
           </div>
-          <div class="wood">
-            <i class="fas fa-hammer"></i>
+          <div class="wood" data-aos="fade-right">
+            <i class="fas fa-hammer" ></i>
             <p>CARPENTARY</p>
           </div>
           <div class="line-2"></div>
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:100,
+        duration: 1000
+      });
+    </script>
   </body>
 </html>

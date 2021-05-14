@@ -8,17 +8,23 @@
       content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script
+      src="https://kit.fontawesome.com/cce18f0ce0.js"
+      crossorigin="anonymous"
+    ></script>
     <meta name="HandheldFriendly" content="true" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
     <!--Homepage-->
     <header>
       <!--navbar-->
       <nav class="navbar">
         <ul class="navbar-links">
           <li class="navbar-link">
-            <a href="index.html" class="navbar-link">HOME </a>
+            <a href="index.html" class="navbar-link">HOME</a>
           </li>
           <li class="navbar-link">
             <a href="about.html" class="navbar-link">ABOUT</a>
@@ -39,6 +45,9 @@
             <a href="contact.html" class="navbar-link">CONTACT</a>
           </li>
         </ul>
+        <label id="nav-icon">
+          <i class="fas fa-bars"></i>
+        </label>
       </nav>
     </header>
 
@@ -54,5 +63,9 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
