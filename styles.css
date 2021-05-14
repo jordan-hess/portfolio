@@ -5,6 +5,10 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+html{
+  height: 100%;
+}
+
 body{
  background-color: rgb(29, 124, 233);
 }
@@ -60,7 +64,7 @@ body{
   transition: .4s;
   background-color: white;
   color: black;
-  padding: 10px 10px 23px 10px;
+  padding: 10px 10px 20px 10px;
   border-radius: 10%;
   width: 10vw;
 }
@@ -91,10 +95,11 @@ body{
 .info{
   align-items: flex-start;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contain{
-  position: absolute;
   display: flex;
   top: 25%;
 }
@@ -102,54 +107,44 @@ body{
 .contain img{
   width: 80vh;
   height: 50vh;
-  margin-left: 10px;
+  margin: 10px;
   border: 5px solid rgb(10, 12, 15);
 }
 
 .info h1{
-  text-align: center;
   font-size: 2rem;
 }
 
 .info h2{
-  text-align: center;
   font-size: 2rem;
 }
 
 .info p{
-  font-size: 1.5rem;
-  margin: 25px;
-}
-
-.me{
-  position: absolute;
-  text-align: center;
-  bottom: 0%;
-}
-
-.me h1{
-  text-align: center;
-  
-}
-
-.me p{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  margin-top: 20px;
 }
 
 .interests{
   display: grid;
-  grid-template-columns: 0.5fr 2px 0.5fr;
+  grid-template-columns: 0.5fr 20px 0.5fr;
   grid-template-rows: repeat(4, 1fr);
   text-align: center;
   bottom: 0;
   height: 200px;
 }
 
+.interested-in{
+  width: 100%;
+}
+
 .interested-in h1{
-  bottom: 0;
   margin: 20px;
   font-size: 2.2rem;
+  text-align: center;
+}
 
+.interested-in p{
+  font-size: 2rem;
 }
 
 .line-1 {
@@ -161,6 +156,7 @@ body{
   background: rgb(5, 7, 8);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 10px;
+  margin: 5px;
 
 }
 
@@ -199,7 +195,7 @@ body{
   grid-template-rows: repeat(4, 1fr);
   bottom: 0;
   height: 700px;
-  margin: 120px;
+  margin: 50px 120px 120px 120px;
   padding: 10px;
 }
 
@@ -255,11 +251,8 @@ body{
 
 }
 
-.skills{
-  height: 10vh;
-}
-
 .skills header{
+  margin-bottom: 60px;
   font-size: 3rem;
   text-align: center;
 }
@@ -433,7 +426,6 @@ form{
   color: white;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
   text-align: center;
 }
 
@@ -481,10 +473,8 @@ button:hover {
 
 .my-contact-info{
   display: flex;
-  position: absolute;
   right: 250px;
-  bottom: 270px;
-  align-items: flex-start;
+  margin-top: 137px;
 }
 
 .J-contact h1{
@@ -533,7 +523,7 @@ button:hover {
 
 
 .testi-box {
-  padding: 50px 50px;
+  margin: 20px;
   width: 90vw;
   display: flex;
   align-items: center;
@@ -542,10 +532,17 @@ button:hover {
 }
 
 .testi-box-item {
-  border-radius: 50%;
-  max-width: 50%;
-  max-height: 50%;
   margin: auto;
+  width: 450px;
+  height: 500px;
+  border-radius: 50%;
+  padding-top: 0;
+}
+
+.testi-pic img{
+  border-radius: 50%;
+  height: 280px;
+  width: 70px;
 }
 
 .testimonial p{
@@ -568,6 +565,45 @@ button:hover {
 
 .owl-carousel {
   overflow: hidden;
+}
+
+footer{
+  background-color: rgb(4, 4, 5);
+  padding-bottom: 45px;
+}
+
+.enquire{
+  color: white;
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+.description{
+  display: flex;
+}
+
+.NE{
+  width: 35%;
+}
+
+.inform{
+  width: 50%;
+  font-size: 1rem;
+}
+
+.inform h1{
+  font-size: 1.5rem;
+}
+
+.inform h2{
+  font-size: 1.5rem;
+}
+
+.get-hold{
+  font-size: 30px;
+  right: 100px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 500px) {
