@@ -16,16 +16,14 @@ body{
 .landing{
   width: 100%;
   background-image: url(https://eskipaper.com/images/dark-wallpaper-8.jpg) ;
-  height: 100vh;
+  height: 90vh;
 }
 
 .landing-img{
   text-align: center;
-  filter: drop-shadow(5px 5px 5px 5px);
 }
 
 .nav-bar {
-  position: fixed;
   width: 100%;
 }
 
@@ -33,13 +31,45 @@ body{
   display: flex;
   text-decoration: none;
   width: 100%;
-  position: relative;
+  list-style-type: none;
   justify-content: space-evenly;
-  gap: 20px;
   background-color: black;
   padding: 10px;
-  align-items: center;
-  margin-right: 0px;
+
+}
+
+.navbar-home{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-about{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-exp{
+  text-decoration: none;
+  color: white;
+}
+.navbar-project{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-skill{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-testi{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-con{
+  text-decoration: none;
+  color: white;
 }
 
 .nav-icon{
@@ -56,17 +86,18 @@ body{
   list-style-type: none;
   color: white;
   width: 10px;
-  margin: 3px;
   height: 4vh;
+  align-items: center;
+  margin: 0;
 }
 
 .navbar-link :hover {
-  transition: .4s;
+  transition: 0.5s;
   background-color: white;
   color: black;
-  padding: 10px 10px 20px 10px;
-  border-radius: 10%;
+  padding: 20px;
   width: 10vw;
+  border-radius: 2%;
 }
 
 .landing-page h1 {
@@ -102,68 +133,84 @@ body{
 .contain{
   display: flex;
   top: 25%;
+  border: 10px solid rgb(4, 7, 158);
+  margin: 8%;
 }
 
 .contain img{
-  width: 80vh;
-  height: 50vh;
-  margin: 10px;
+  width: 40vw;
+  height: 49vh;
+  margin: 30px 30px 0px 30px;
   border: 5px solid rgb(10, 12, 15);
 }
 
 .info h1{
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .info h2{
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .info p{
-  font-size: 1.7rem;
-  margin-top: 20px;
+  font-size: 1rem;
+  margin-top: 10px;
 }
+
+
 
 .interests{
   display: grid;
-  grid-template-columns: 0.5fr 20px 0.5fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 0.5fr 20px 0.5fr 20px 0.5fr;
+  grid-template-rows: repeat(5, 1fr);
   text-align: center;
-  bottom: 0;
   height: 200px;
 }
 
 .interested-in{
   width: 100%;
+  position: relative;
 }
 
 .interested-in h1{
-  margin: 20px;
-  font-size: 2.2rem;
+  margin: 0px 10px 10px 0px;
+  font-size: 1.2rem;
   text-align: center;
 }
 
 .interested-in p{
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .line-1 {
   width: 5px;
-  height: 100%;
+  height: 95%;
   grid-column-start: 2;
   grid-row-start: 1;
   grid-row-end: 5;
-  background: rgb(5, 7, 8);
+  background: rgb(6, 16, 156);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 10px;
   margin: 5px;
+}
 
+.line-3 {
+  width: 5px;
+  height: 95%;
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background: rgb(6, 16, 156);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  margin: 5px;
 }
 
 #icon{
   font-size: 20px;
   margin-bottom: 25px;
 }
+
 
  .camera{
   grid-column: 3;
@@ -187,6 +234,17 @@ body{
   grid-column: 1;
   grid-row: 1;
   font-size: 20px;
+}
+
+.weight{
+  grid-column: 5;
+  grid-row: 1;
+  font-size: 20px;
+}
+
+.game{
+  grid-column: 5;
+  grid-row: 2;
 }
 
 .skill-icons{
@@ -270,74 +328,43 @@ body{
 }
 
 .experience{
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: rgb(29, 124, 233)
+ text-align: center;
 }
 
-.experience h1{
-  font-size: 2rem;
+.experience header{
+  font-size: 1.5rem;
+  padding: 50px;
 }
 
-
-.icons{
-  font-size: 8rem;
-  top: 25%;
+.experience i{
+  border: 10px solid white;
+  border-radius: 50%;
+  background-color: white ;
 }
 
-.my-experience {
-  display: grid;
-  grid-template-columns: 1fr 10% 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  background: url(https://i.picsum.photos/id/1019/5472/3648.jpg?hmac=2mFzeV1mPbDvR0WmuOWSiW61mf9DDEVPDL0RVvg1HPs);
-  background-size: cover;
-  background-attachment: fixed;
-  align-items: center;
-  justify-items: center;
-  padding: 10%;
+.left-column{
+
 }
 
-.line {
-  width: 10px;
-  height: 90%;
-  grid-column-start: 2;
-  grid-row-start: 1;
-  grid-row-end: 5;
-  background: rgb(29, 124, 233);
-  box-shadow: 0 8px 32px 0 rgba(3, 4, 7, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
+.columns h1{
+  margin: 10px;
 }
 
-.work-1{
-  grid-column: 3;
-  grid-row: 1;
+.columns{
+  display: flex;
 }
 
-.education-1 {
-  grid-column: 1;
-  grid-row: 2;
+.left-column h1{
+  text-align: right;
 }
 
-.work-2 {
-  grid-column: 3;
-  grid-row: 3;
+.left-column{
+  width: 50%;
+  float: right;
 }
 
-.timeline {
-  color: black;
-  text-shadow: black;
-  padding: 10%;
-  margin: 10%;
-  background:rgb(29, 124, 233);
-  box-shadow: 0 8px 32px 0  rgba(32, 84, 255, 0.959);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
+.right-column{
+  width: 50%;
 }
 
 .body{
@@ -353,6 +380,7 @@ body{
 
 .container {
   display:flex;
+  height: 80vh;
 }
 
 .card-heading {
@@ -367,7 +395,7 @@ body{
 
 .card {
   width: 50vw;
-  margin: 3%;
+  margin: 0% 3% 3% 3%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -383,6 +411,10 @@ body{
   text-align: center;
   padding: 2%;
   color: black;
+}
+
+.card-details img{
+  height: 30vh;
 }
 
 .card-buttons {
@@ -472,7 +504,7 @@ button:hover {
 }
 
 .my-contact-info{
-  display: flex;
+  
   right: 250px;
   margin-top: 137px;
 }
@@ -484,83 +516,75 @@ button:hover {
   margin: 25px;
 }
 
-.J-contact{
-  display: flex;
-  flex-direction: column;
+.J-contact h2{
+  color: black;
+  font-size: 1.2rem;
+
 }
 
 .number{
-  display: flex;
   justify-content: center;
   color: black;
-  font-size: 1.5rem;
   padding: 10px;
+  margin: 10px;
 }
 
 .address{
-  display: flex;
   justify-content: center;
   color: black;
-  font-size: 1.5rem;
   padding: 10px;
   margin: 10px;
 }
 
 .Email{
-  display: flex;
   justify-content: center;
   color: black;
-  font-size: 1.5rem;
   padding: 10px;
   margin: 10px;
 }
 
-.details{
-  display: flex;
-  flex-direction: column;
-}
-
-
 
 .testi-box {
-  margin: 20px;
-  width: 90vw;
+  margin: 50px 100px ;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .testi-box-item {
-  margin: auto;
-  width: 450px;
-  height: 500px;
-  border-radius: 50%;
-  padding-top: 0;
+  margin: 200px 150px;
+  width: 700px;
+  border:3px solid black;
+  padding: 50px;
+}
+
+
+.testi-pic{
+  width: 45px;
+  float: right;
 }
 
 .testi-pic img{
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
-  height: 280px;
-  width: 70px;
 }
 
 .testimonial p{
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.testimonial h1{
+  font-size: 3rem;
+  font-family: initial;
 }
 
 .testimonial h2{
-  font-size: 3rem;
+  font-size: 1.2rem;
+  width: 200px;
 }
 
 .testimonial h3 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 20px;
-}
-
-.testimonial p {
-  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 20px;
 }
 
 .owl-carousel {
@@ -569,41 +593,13 @@ button:hover {
 
 footer{
   background-color: rgb(4, 4, 5);
-  padding-bottom: 45px;
-}
-
-.enquire{
-  color: white;
-  text-align: center;
   padding: 10px;
-  justify-content: center;
 }
 
-.description{
-  display: flex;
-}
-
-.NE{
-  width: 35%;
-}
-
-.inform{
-  width: 50%;
-  font-size: 1rem;
-}
-
-.inform h1{
-  font-size: 1.5rem;
-}
-
-.inform h2{
-  font-size: 1.5rem;
-}
-
-.get-hold{
-  font-size: 30px;
-  right: 100px;
-  margin-top: 10px;
+footer p{
+  font-size: 0.7rem;
+  text-align: center;
+  color: white;
 }
 
 @media screen and (max-width: 500px) {
