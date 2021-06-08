@@ -23,6 +23,45 @@ body{
   text-align: center;
 }
 
+@media screen and (max-width:768){
+  .line{
+    width:30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  nav{
+    position: relative;
+  }
+
+  .burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50% ;
+    transform: translate(-5%, -50%);
+    color: white;
+  }
+
+  .navbar-link{
+    position: fixed;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% 10%);
+    -webkit-clip-path:circle(100px at 90% 10%);
+    transition: all 1s ease-out;
+  }
+  .navbar-link.open{
+    clip-path: circle(1000px at 90% 10%);
+    -webkit-clip-path:circle(1000px at 90% 10%);
+  }
+  landing{
+    flex-direction: column;
+  }
+}
+
 .nav-bar {
   width: 100%;
 }
@@ -123,18 +162,25 @@ body{
   text-align: center;
 }
 
+.about-about header{
+  text-align: center;
+  padding: 30px 30px 0px 30px;
+  font-size: 2rem;
+}
+
 .info{
   align-items: flex-start;
-  padding: 10px;
   display: flex;
   flex-direction: column;
+  margin: 30px;
+  padding: 0px 20px 20px 20px;
 }
 
 .contain{
   display: flex;
   top: 25%;
-  border: 10px solid rgb(4, 7, 158);
-  margin: 8%;
+  border: 10px solid rgb(6, 82, 245);
+  margin: 40px 80px 80px 80px;
 }
 
 .contain img{
@@ -148,21 +194,18 @@ body{
   font-size: 1.2rem;
 }
 
-.info h2{
-  font-size: 1.2rem;
-}
-
 .info p{
   font-size: 1rem;
   margin-top: 10px;
 }
 
-
+.info h2{
+  margin-top: 30px;
+}
 
 .interests{
   display: grid;
   grid-template-columns: 0.5fr 20px 0.5fr 20px 0.5fr;
-  grid-template-rows: repeat(5, 1fr);
   text-align: center;
   height: 200px;
 }
@@ -188,8 +231,8 @@ body{
   grid-column-start: 2;
   grid-row-start: 1;
   grid-row-end: 5;
-  background: rgb(6, 16, 156);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgb(6, 82, 245);
+  box-shadow: 0 8px 32px 0 rgb(6, 82, 245);
   border-radius: 10px;
   margin: 5px;
 }
@@ -200,8 +243,8 @@ body{
   grid-column-start: 4;
   grid-row-start: 1;
   grid-row-end: 5;
-  background: rgb(6, 16, 156);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: rgb(6, 82, 245);
+  box-shadow: 0 8px 32px 0 rgb(6, 82, 245);
   border-radius: 10px;
   margin: 5px;
 }
@@ -340,11 +383,9 @@ body{
   border: 10px solid white;
   border-radius: 50%;
   background-color: white ;
-}
-
-.left-column{
 
 }
+
 
 .columns h1{
   margin: 10px;
@@ -361,10 +402,13 @@ body{
 .left-column{
   width: 50%;
   float: right;
+  margin: 20px;
 }
 
 .right-column{
   width: 50%;
+  float: right;
+  margin: 20px;
 }
 
 .body{
@@ -545,14 +589,12 @@ button:hover {
 
 
 .testi-box {
-  margin: 50px 100px ;
+  padding: 180px;
   display: flex;
 }
 
 .testi-box-item {
-  margin: 200px 150px;
-  width: 700px;
-  border:3px solid black;
+  width: 750px;
   padding: 50px;
 }
 
@@ -566,6 +608,7 @@ button:hover {
   height: 45px;
   width: 45px;
   border-radius: 50%;
+  padding: 6px;
 }
 
 .testimonial p{
@@ -574,12 +617,13 @@ button:hover {
 
 .testimonial h1{
   font-size: 3rem;
-  font-family: initial;
+  width: 100%;
+
 }
 
 .testimonial h2{
   font-size: 1.2rem;
-  width: 200px;
+  text-align: center;                  
 }
 
 .testimonial h3 {
@@ -625,44 +669,27 @@ item{
   height:100%;
 
 }
-
-navbar ul{
-  margin-right: 20px;
+nav{
+  height: 10vh;
+  background: black;
 }
 
-navbar a{
+.navbar-link{
+ text-decoration: none;
+ color: white;
+ font-size: 1.5rem;
+ display: flex;
+ list-style: none;
+ width: 50%;
+ background: black;
+ height: 100%;
+ justify-content: space-around ;
+ align-items: center;
+}
+
+navbar-link a{
   font-size: 17px;
-}
-
-@media( max-width:909px){
-  nav #icon{
-    display: block;
-    color: white;
-    font-size: 30px;
-    line-height: 80px;
-    float: right;
-    margin-right: 40px;
-  }
-  navbar-ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background:white ;
-    top: 80px;
-    left: 0;
-    text-align: center;
-  }
-  navbar li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  navbar a{
-    font-size: 20px;
-  }
-  a.active, a:hover{
-    border: none;
-    color: white;
+  color:white;
   }
 }
 
