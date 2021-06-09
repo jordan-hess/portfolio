@@ -290,84 +290,115 @@ body{
   grid-row: 2;
 }
 
-.skill-icons{
-  display: grid;
-  grid-template-columns: 2fr 10% 2fr ;
-  grid-template-rows: repeat(4, 1fr);
-  bottom: 0;
-  height: 700px;
-  margin: 50px 120px 120px 120px;
-  padding: 10px;
+.my-skills{
+  padding: 100px;
+}
+
+.skill-icons {
+  display: flex;
+  font-size: 4rem;
+  justify-content: center;
+}
+
+.soft-skills{
+  display: flex;
+  font-size: 4rem;
+  justify-content: center;
 }
 
 .leader{
-  grid-column: 1;
-  grid-row: 1;
-  font-size: 40px;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 40px;
+  margin: 20px;
+  background-color: rgb(0, 89, 255);
+  padding: 30px ;
+  width: 10vw;
+}
+
+.leader :hover{
+  color: white;
+
 }
 
 .html{
-  grid-column: 1;
-  grid-row: 2;
-  font-size: 40px;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 40px;
+  margin: 20px;
+  background-color: rgb(0, 89, 255);
+  padding: 30px;
+  width: 10vw;
+}
+
+.html :hover{
+  color: white;
 }
 
 .java{
-  grid-column: 3;
-  grid-row: 1;
-  font-size: 40px;
-  display: flex;
-  gap: 40px;
+  margin: 20px;
+  background-color: rgb(0, 89, 255);
+  padding: 30px;
+  width: 10vw;
 }
 
-.toast{
-  grid-column: 3;
-  grid-row: 2s;
-  font-size: 40px;
-  display: flex;
-  gap: 40px;
-}
-
-.wood{
-  grid-column:1 ;
-  grid-row: 3;
-  font-size: 40px;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 40px;
+.java :hover{
+  color: white;
 }
 
 .css{
-  grid-column: 3;
-  grid-row: 3;
-  font-size: 40px;
-  display: flex;
-  gap: 40px;
-
+  margin: 20px;
+  background-color: rgb(0, 89, 255);
+  padding: 30px;
+  width: 10vw;
 }
 
-.skills header{
+.css :hover{
+  color: white;
+}
+
+.mic{
+  margin: 20px;
+  background-color: rgb(0, 89, 255);
+  padding: 30px;
+  width: 10vw;
+}
+
+.mic :hover{
+  color: white;
+}
+
+.wood{
+  margin: 20px;
+  background-color: rgb(0, 89, 255);
+  padding: 30px;
+  width: 10vw;
+}
+
+.wood :hover{
+  color: white;
+}
+
+.pty{
+  margin: 20px;
+  background-color: rgb(0, 89, 255);
+  padding: 30px;
+  width: 10vw;
+}
+
+.pty:hover{
+  color: white;
+}
+
+.cheese{
+  margin: 20px;
+  background-color: rgb(0, 89, 255);
+  padding: 30px;
+  width: 10vw;
+}
+
+.cheese :hover{
+  color: white;
+}
+
+.skils-h{
   margin-bottom: 60px;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-}
-
-.line-2 {
-  width: 10px;
-  height: 60vh;
-  grid-column-start: 2;
-  grid-row-start: 1;
-  grid-row-end: 5;
-  background: rgb(5, 7, 8);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  border-radius: 10px;
-  margin: 0 0 0 40px;
 }
 
 .experience{
@@ -375,7 +406,7 @@ body{
 }
 
 .experience header{
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 50px;
 }
 
@@ -383,32 +414,42 @@ body{
   border: 10px solid white;
   border-radius: 50%;
   background-color: white ;
-
-}
-
-
-.columns h1{
-  margin: 10px;
+  margin: 5px;
 }
 
 .columns{
   display: flex;
+  margin: 0px 70px 70px 70px;
 }
 
 .left-column h1{
+  text-align: right;
+  margin-top: 30px;
+}
+
+.left-column p{
+  text-align: right;
+}
+
+.left-column sub{
   text-align: right;
 }
 
 .left-column{
   width: 50%;
   float: right;
-  margin: 20px;
+  margin: 20px 40px 40px 40px;
 }
 
 .right-column{
   width: 50%;
   float: right;
   margin: 20px;
+}
+
+.right-column h1{
+  text-align:left;
+  margin-top: 30px;
 }
 
 .body{
@@ -589,13 +630,15 @@ button:hover {
 
 
 .testi-box {
-  padding: 180px;
+  padding: 200px;
   display: flex;
 }
 
 .testi-box-item {
   width: 750px;
   padding: 50px;
+  background-color: rgb(0, 89, 255) ;
+  align-items: center;
 }
 
 
