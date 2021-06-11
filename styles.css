@@ -586,7 +586,6 @@ button {
   justify-content: flex-start;
   align-items: center;
   background: transparent;
-  padding: 5%, 10%;
   border: none;
   border-radius: 200px;
   box-shadow: 5px 5px 60px black;
@@ -609,7 +608,6 @@ button:hover {
 }
 
 .my-contact-info{
-  
   right: 250px;
   margin-top: 137px;
 }
@@ -617,14 +615,17 @@ button:hover {
 .J-contact h1{
   color: black;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin: 25px;
 }
 
 .J-contact h2{
   color: black;
   font-size: 1.2rem;
+}
 
+.J-contact{
+  padding: 24px;
 }
 
 .number{
@@ -634,6 +635,13 @@ button:hover {
   margin: 10px;
 }
 
+.number i{
+  position: absolute;
+  left:50%;
+  top:47%;
+  font-size: 25px;
+}
+
 .address{
   justify-content: center;
   color: black;
@@ -641,11 +649,25 @@ button:hover {
   margin: 10px;
 }
 
+.address i{
+  position: absolute;
+  left: 50%;
+  top: 57%;
+  font-size: 25px;
+}
+
 .Email{
   justify-content: center;
   color: black;
   padding: 10px;
   margin: 10px;
+}
+
+.Email i{
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  font-size: 25px;
 }
 
 
