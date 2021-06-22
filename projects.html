@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="styles.css" />
+  <!-- <link rel="stylesheet" href="scripts.js" /> -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects</title>
@@ -34,67 +35,22 @@
       </li>
     </ul>
   </nav>
-
-  
-
-  <h1 class="card-container-heading">MY WORK</h1>
-  <!-- CARD CONTAINER -->
-  <div class="container">
-    <!-- CARD 1 -->
-    <div class="card-1">
-      <div class="card" data-aos="flip-left">
-        <!-- CARD IMAGE -->
-        <div class="card-details">
-          <!-- CARD DETAILS -->
-          <h2 class="card-heading">Contact Form</h2>
-          <h3 class="card-subtitle">HTML/CSS </h3>
-          <p class="card-description">
-            A contact form using neomorphism and formspree.
-          </p>
-          <!-- CARD BUTTONS -->
-            <a href="" target="_blank" class="button">Live</a>
-            <a href="https://github.com/jordan-hess/contact-form.git" target="_blank" class="button">Github</a>
-        </div>
-      </div>
+  <section>
+    <h1>My Projects</h1>
+    <div class="button-container">
+      <button onclick="filterCards('All')">All</button>
+      <button onclick="filterCards('HTML/CSS')">HTML/CSS</button>
+      <button onclick="filterCards('Python')">Python</button>
+      <button onclick="filterCards('JavaScript')">JavaScript</button>
     </div>
-    <!-- CARD 2 -->
-    <div class="card-2">
-      <div class="card" data-aos="flip-left">
-        <!-- CARD DETAILS -->
-        <div class="card-details">
-          <h2 class="card-heading">My Timeline</h2>
-          <h3 class="card-subtitle">HTML/CSS</h3>
-          <p class="card-description">
-            Timeline using AOS animation and glassmorphism.
-          </p>
-          <!-- CARD BUTTONS -->
-            <a href="" target="_blank" class="button">Live</a>
-            <a href="" target="_blank" class="button">Github</a>
-        </div>
-      </div>
-    </div>
-    <!-- CARD 3 -->
-    <div class="card-3">
-      <div class="card" data-aos="flip-left">
-        <!-- CARD DETAILS -->
-        <div class="card-details">
-          <h2 class="card-heading">Testimonial slider</h2>
-          <h3 class="card-subtitle">HTML/CSS</h3>
-          <p class="card-description">
-            Testimonials using glassmorphism and javascript.
-          </p>
-          <!-- CARD BUTTONS -->
-            <a href="" target="_blank" class="button">Live</a>
-            <a href="" target="_blank" class="button">Github</a>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="project-container"></div>
+  </section>
   <footer>
     <div class="foot">
       <p class="copy">Copy right © By Jordan Hess 2021</p>
     </div>
   </footer>
 </body>
+<script src="./scripts.js"></script>
 
 </html>
