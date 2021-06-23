@@ -37,6 +37,51 @@ let projects = [
         githubURL: "https://github.com/jordan-hess/contact-form.git",
         liveProjectURL: "#"
     },
+    {
+        imgURL: "Screenshot 2021-06-23 185323.png",
+        title: "Lotto Machine",
+        imgALT: "card-4",
+        techStack: "Python",
+        description: "A Lotto machine created using Python.",
+        githubURL: "https://github.com/jordan-hess/python-lotto-numbers.git",
+        liveProjectURL: "#"
+    },
+    {
+        imgURL: "Screenshot 2021-06-23 193903.png",
+        title: "Currency Converter",
+        imgALT: "card-5",
+        techStack: "Python",
+        description: "Currency converter created using Python.",
+        githubURL: "https://github.com/jordan-hess/currency-converter.git",
+        liveProjectURL: "#"
+    },
+    {
+        imgURL: "Screenshot 2021-06-23 200727.png",
+        title: "Currency Converter",
+        imgALT: "card-6",
+        techStack: "JavaScript",
+        description: "Calculater using javascript.",
+        githubURL: "https://github.com/jordan-hess/js-calculator.git",
+        liveProjectURL: "#"
+    },
+    {
+        imgURL: "Screenshot 2021-06-23 204848.png",
+        title: "Sneaker Site",
+        imgALT: "card-7",
+        techStack: "HTML/CSS",
+        description: "Sneaker website using HTML and CSS.",
+        githubURL: "https://github.com/jordan-hess/Sneaker_Site.git",
+        liveProjectURL: "#"
+    },
+    {
+        imgURL: "Screenshot 2021-06-23 211615.png",
+        title: "Temperature converter",
+        imgALT: "card-8",
+        techStack: "Python",
+        description: "Sneaker website using HTML and CSS.",
+        githubURL: "https://github.com/jordan-hess/temperature_convertor.git",
+        liveProjectURL: "#"
+    },
 ];
 
 function createCard(card) {
