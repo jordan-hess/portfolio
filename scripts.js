@@ -1,12 +1,12 @@
 //nav bar
-const burger = document.querySelector('.burger');
-const navbarlinks = document.querySelector('.nav-links');
-const links = document.querySelectorAll('.navbarlink');
+const burger = document.querySelector(".burger");
+const navbarLinks = document.querySelector(".navbar-links");
+const links = document.querySelectorAll(".navbar-links li");
 
 
-// burger.addEventListener('click', () => {
-
-// });
+ burger.addEventListener("click", () => {
+     navbarLinks.classList.toggle("open");
+ });
 
 //project cards
 let projects = [

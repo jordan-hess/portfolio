@@ -21,126 +21,32 @@ body{
 
 .landing-img{
   text-align: center;
+  position: relative;
 }
 
-@media screen and (max-width:768){
-  .line{
-    width:30px;
-    height: 3px;
-    background: white;
-    margin: 5px;
-  }
-  nav{
-    position: relative;
-  }
-
-  .burger{
-    position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 50% ;
-    transform: translate(-5%, -50%);
-    color: white;
-  }
-
-  .navbar-link{
-    position: fixed;
-    background: white;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(100px at 90% 10%);
-    -webkit-clip-path:circle(100px at 90% 10%);
-    transition: all 1s ease-out;
-  }
-  .navbar-link.open{
-    clip-path: circle(1000px at 90% 10%);
-    -webkit-clip-path:circle(1000px at 90% 10%);
-  }
-  landing{
-    flex-direction: column;
-  }
-}
-
-.nav-bar {
-  width: 100%;
+nav{
+  height: 10vh;
+  background: black;
 }
 
 .navbar-links {
   display: flex;
-  text-decoration: none;
   width: 100%;
+  height: 100%;
   list-style-type: none;
   justify-content: space-evenly;
   background-color: black;
   padding: 10px;
-
-}
-
-.navbar-home{
-  text-decoration: none;
-  color: white;
-}
-
-.navbar-about{
-  text-decoration: none;
-  color: white;
-}
-
-.navbar-exp{
-  text-decoration: none;
-  color: white;
-}
-.navbar-project{
-  text-decoration: none;
-  color: white;
-}
-
-.navbar-skill{
-  text-decoration: none;
-  color: white;
-}
-
-.navbar-testi{
-  text-decoration: none;
-  color: white;
-}
-
-.navbar-con{
-  text-decoration: none;
-  color: white;
-}
-
-.nav-icon{
-  color:white;
-  font-size: 30px;
-  line-height: 80px;
-  float: right;
-  margin-right: 40px;
-  cursor: pointer;
-}
-
-.navbar-link {
-  text-decoration: none;
-  list-style-type: none;
-  color: white;
-  width: 10px;
-  height: 4vh;
   align-items: center;
-  margin: 0;
 }
 
-.navbar-link :hover {
-  transition: 0.5s;
-  background-color: white;
-  color: black;
-  padding: 20px;
-  width: 10vw;
-  border-radius: 2%;
+.navbar-links li a{
+  color: white;
+  text-decoration: none;
+
 }
 
 .landing-page h1 {
-  position: relative;
   font-size: 60px;
   top: 440px;
   color: white;
@@ -148,7 +54,6 @@ body{
 }
 
 .landing p {
-  position: relative;
   text-align: center;
   font-size: 60px;
   top: 440px;
@@ -743,21 +648,6 @@ footer p{
   text-align: center;
   color: white;
 }
-
-@media screen and (max-width: 500px) {
-  .testimonials {
-    grid-template: 10% 1fr;
-  }
-}
-
-
-@media screen and (max-width: 800px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-  }
   .card {
     width: 100%;
   }
@@ -789,18 +679,49 @@ navbar-link a{
   font-size: 17px;
   color:white;
   }
-}
 
-/* Media Queries*/
-@media screen and (max-width:) {
-  #primary { width: }
-  #secondary { width:; margin-left:%;}  
-}
 
-/* Media Queries */
-@media screen and (max-width: px) {
-  #primary { width:%; }
-  #secondary { width:%; margin:0; border:; }
-}
+@media screen and (max-width: 768px){
 
-img { max-width: , height:  }
+  .Line{
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+
+  nav{
+    position: relative;
+  }
+
+  .burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .navbar-links{
+    position: fixed;
+    background: black;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10% );
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .navbar-links.open {
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .landing{
+    flex-direction: column;
+  }
+}
