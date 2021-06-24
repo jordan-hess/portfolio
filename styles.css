@@ -174,6 +174,7 @@ body{
   flex-direction: column;
   margin: 30px;
   padding: 0px 20px 20px 20px;
+  justify-content: space-evenly;
 }
 
 .contain{
@@ -191,7 +192,7 @@ body{
 }
 
 .info h1{
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .info p{
@@ -291,7 +292,7 @@ body{
 }
 
 .my-skills{
-  padding: 100px;
+  padding: 100px 100px 50px 100px;
 }
 
 .skill-icons {
@@ -399,6 +400,7 @@ body{
   margin-bottom: 60px;
   font-size: 2rem;
   text-align: center;
+  padding: 50px;
 }
 
 .experience{
@@ -676,18 +678,18 @@ button:hover {
 }
 
 .Email i{
-  margin: 10px 30px 10px 10px ;
+  margin: 10px 24px 10px 10px ;
   font-size: 25px;
 }
 
 
 .testi-box {
-  padding: 200px 200px 200px 400px;
+  padding: 40px 200px 80px 300px;
   display: flex;
 }
 
 .testi-box-item {
-  width: 750px;
+  width: 700px;
   padding: 50px;
   background-color: rgb(0, 89, 255) ;
   align-items: center;
@@ -718,7 +720,7 @@ button:hover {
 
 .testimonial h2{
   font-size: 2rem;
-  padding: 50px;
+  padding: 20px 50px 50px 50px;
   text-align: center;                  
 }
 
