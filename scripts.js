@@ -4,9 +4,10 @@ const navbarLinks = document.querySelector(".navbar-links");
 const links = document.querySelectorAll(".navbar-links li");
 
 
- burger.addEventListener("click", () => {
-     navbarLinks.classList.toggle("open");
- });
+burger.addEventListener("click", () => {
+    navbarLinks.classList.toggle("open");
+});
+
 
 //project cards
 let projects = [

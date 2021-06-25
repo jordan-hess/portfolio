@@ -13,19 +13,21 @@ body{
  background-color: rgb(29, 124, 233);
 }
 
+
+
 .landing{
   width: 100%;
   background-image: url(https://eskipaper.com/images/dark-wallpaper-8.jpg) ;
-  height: 90vh;
+  height: 100vh;
+  background-position: center;
 }
 
-.landing-img{
+.landing img{
   text-align: center;
-  position: relative;
+  height: 50vh;
 }
 
 nav{
-  height: 10vh;
   background: black;
 }
 
@@ -36,8 +38,15 @@ nav{
   list-style-type: none;
   justify-content: space-evenly;
   background-color: black;
-  padding: 10px;
   align-items: center;
+}
+
+.navbar-links li a:hover{
+  background-color: white;
+  color: black;
+  padding: 20px;
+  transition: 0.8s;
+  border-radius: 5%;
 }
 
 .navbar-links li a{
@@ -48,17 +57,18 @@ nav{
 
 .landing-page h1 {
   font-size: 60px;
-  top: 440px;
   color: white;
   background-color: black;
+  width: 100%;
+
 }
 
 .landing p {
   text-align: center;
   font-size: 60px;
-  top: 440px;
   color: white;
   background-color: black;
+  width: 100%;
 }
 
 
@@ -681,7 +691,15 @@ navbar-link a{
   }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width:600px){
+
+  .landing-page h1{
+    font-size: 30px;
+  }
+
+  .landing-page p{
+    font-size: 30px;
+  }
 
   .Line{
     width: 30px;
@@ -721,7 +739,4 @@ navbar-link a{
     pointer-events: all;
   }
 
-  .landing{
-    flex-direction: column;
-  }
 }
