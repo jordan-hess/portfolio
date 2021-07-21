@@ -37,33 +37,34 @@
       </li>
     </ul>
   </nav>
-  <div style="display: flex">
-    <form method="POST" action="https://formspree.io/f/mleangpw" id="contact-form">
-      <div class="contact-me-info">
-        <h1 class="contact-heading">Contact Me</h1>
-        <div class="contact-info">
-          <label for="name" class="contact-info"></label>
-          <input type="text" id="name" required name="name" class="contact-input" placeholder="Full Name" />
+  <div class="whole-con" style="display: flex">
+    <div>
+      <form method="POST" action="https://formspree.io/f/mleangpw" id="contact-form">
+        <div class="contact-me-info">
+          <h1 class="contact-heading">Contact Me</h1>
+          <div class="contact-info">
+            <label for="name" class="contact-info"></label>
+            <input type="text" id="name" required name="name" class="contact-input" placeholder="Full Name" />
+          </div>
+          <div class="contact-info">
+            <label for="phone number" class="contact-info"></label>
+            <input type="tel" id="Number" required name="Number" class="contact-input" placeholder="Phone Number" />
+          </div>
+          <div class="contact-info">
+            <label for="email" class="contact-info"></label>
+            <input type="email" id="email" required name="email" class="contact-input" placeholder="Email Address" />
+          </div>
+          <div class="contact-info">
+            <label for="Your Message" class="contact-info"></label>
+            <input type="text" type="text" id="Description" required name="Description" class="contact-input"
+              placeholder="Description" />
+          </div>
+          <div>
+            <button>SEND</button>
+          </div>
         </div>
-        <div class="contact-info">
-          <label for="phone number" class="contact-info"></label>
-          <input type="tel" id="Number" required name="Number" class="contact-input" placeholder="Phone Number" />
-        </div>
-        <div class="contact-info">
-          <label for="email" class="contact-info"></label>
-          <input type="email" id="email" required name="email" class="contact-input" placeholder="Email Address" />
-        </div>
-        <div class="contact-info">
-          <label for="Your Message" class="contact-info"></label>
-          <input type="text" type="text" id="Description" required name="Description" class="contact-input"
-            placeholder="Description" />
-        </div>
-        <div>
-          <button>SEND</button>
-        </div>
-      </div>
-    </form>
-
+      </form>
+    </div>
     <div class="my-contact">
       <div class="my-contact-info">
         <div class="J-contact">
@@ -96,12 +97,11 @@
     </div>
   </div>
   <footer>
-    <footer>
-      <div class="foot">
-        <p class="copy">Copy right © By Jordan Hess 2021</p>
-      </div>
-    </footer>
+    <div class="foot">
+      <p class="copy">Copy right © By Jordan Hess 2021</p>
+    </div>
   </footer>
+  <script src="./scripts.js"></script>
 </body>
 
 </html>

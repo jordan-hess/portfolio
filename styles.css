@@ -25,6 +25,7 @@ body{
 .landing img{
   text-align: center;
   height: 50vh;
+  margin-right: 150px;
 }
 
 nav{
@@ -97,6 +98,7 @@ nav{
   top: 25%;
   border: 10px solid rgb(6, 82, 245);
   margin: 40px 80px 80px 80px;
+  
 }
 
 .contain img{
@@ -128,7 +130,6 @@ nav{
 
 .interested-in{
   width: 100%;
-  position: relative;
 }
 
 .interested-in h1{
@@ -694,11 +695,16 @@ navbar-link a{
 @media screen and (max-width:600px){
 
   .landing-page h1{
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .landing-page p{
-    font-size: 30px;
+    font-size: 40px;
+  }
+
+  .landing img{
+    height: 30vh;
+    margin-right: 30px;
   }
 
   .Line{
@@ -718,7 +724,7 @@ navbar-link a{
     right: 5%;
     top: 50%;
     transform: translate(-5%, -50%);
-    z-index: 2;
+    z-index: 3;
   }
 
   .navbar-links{
@@ -728,15 +734,337 @@ navbar-link a{
     width: 100%;
     flex-direction: column;
     clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10% );
+    -webkit-clip-path: circle(100px at 90% -30% );
     transition: all 1s ease-out;
     pointer-events: none;
+    z-index: 2;
   }
 
   .navbar-links.open {
     clip-path: circle(1500px at 90% -10%);
     -webkit-clip-path: circle(1500px at 90% -10%);
     pointer-events: all;
+    z-index: 2;
+  }
+
+  .contain{
+    flex-direction: column;
+    margin: 20px;
+    padding: 5px;
+  }
+
+  .contain img{
+    width: 80vw;
+  }
+
+  .testi-box {
+    padding: 0 20px 30px 20px;
+  }
+
+  .testi-box-item{
+    width: 100vw;
+  }
+
+  .left-column h1{
+    font-size: 1.2em;
+  }
+  
+  .right-column h1{
+    font-size: 1.2em;
+  }
+
+  .columns{
+    margin: 20px 0px 60px 0px;
+  }
+
+
+  .button-container :hover{
+    width: 100px;
+    padding: 10px;
+  }
+
+  .leader{
+    width: 18vw;
+  }
+
+  .html{
+    width: 40vw;
+  }
+
+  .java{
+    width: 40vw;
+  }
+
+  .css{
+    width: 40vw;
+  }
+
+  .mic{
+    width: 40vw;
+  }
+
+  .wood{
+    width: 40vw;
+  }
+
+  .pty{
+    width: 40vw;
+  }
+
+  .cheese{
+    width: 40vw;
+  }
+
+  .skill-icons {
+    font-size: 3rem;
+  }
+
+  .soft-skills{
+    font-size: 3rem;
+  }
+
+  .whole-con{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact-form{
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .J-contact{
+    height: 60vh;
+  }
+
+  .number{
+    margin: 10px 10px 10px 160px;
+  }
+
+  .address{
+    margin: 10px 10px 10px 160px;
+  }
+
+  .Email{
+    margin: 10px 10px 10px 160px;
+  }
+
+  .project-card{
+    height: 30vh;
+    margin-bottom: 5rem;
+  }
+
+  .project-card img{
+    height: 150%;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width:420px){
+  .landing-page h1{
+    font-size: 27px;
+  }
+
+  .landing-page p{
+    font-size: 27px;
+  }
+
+  .contain{
+    border: none;
+    margin: 0px;
+  }
+
+  .contain img{
+    width: 100%;
+    margin: 0px;
+    height: 50%;
+    margin-bottom: 50px;
+  }
+
+  .line-1{
+    height: 0px;
+  }
+
+  .line-3{
+    height: 0px;
+  }
+
+  .interested-in h1{
+    margin-bottom: 50px;
+  }
+
+  .interests{
+    margin-bottom: 50px;
+  }
+  
+  .info{
+    margin: 0px;
+  }
+
+  .info h1{
+    align-self: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .info h2{
+    text-align: center;
+  }
+
+  .info p{
+    text-align: center;
+  }
+
+  .testi-box {
+    padding: 0 20px 30px 20px;
+  }
+
+  .testi-box-item{
+    width: 80vw;
+  }
+
+  .left-column h1{
+    font-size: 1em;
+  }
+
+  .left-column{
+    margin: 20px 0px 0px 20px ;
+  }
+  
+  .right-column h1{
+    font-size: 1em;
+  }
+
+  .right-column{
+    margin: 20px 0px 0px 20px ;
+  }
+
+  .columns{
+    margin: 0px 0px 60px 0px;
+  }
+
+
+  .button-container :hover{
+    width: 100px;
+    padding: 10px;
+  }
+
+  .my-skills h1{
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .my-skills {
+    padding: 100px 50px 100px;
+}
+
+  .leader{
+    width: 19vw;
+    font-size: 30px;
+    margin: 20px 5px 20px 5px;
+    padding: 25px;
+  }
+
+  .html{
+    width: 19vw;
+    font-size: 35px;
+    margin: 20px 5px 20px 5px;
+    padding: 25px;
+  }
+
+  .java{
+    width: 19vw;
+    font-size: 35px;
+    margin: 20px 5px 20px 5px;
+    padding: 25px;
+  }
+
+  .css{
+    width: 19vw;
+    font-size: 35px;
+    margin: 20px 5px 20px 5px;
+    padding: 25px;
+  }
+
+  .mic{
+    width: 19vw;
+    font-size: 35px;
+    margin: 20px 5px 20px 5px;
+    padding: 25px;
+  }
+
+  .wood{
+    width: 19vw;
+    font-size: 35px;
+    margin: 20px 5px 20px 5px;
+    padding: 25px;
+  }
+
+  .pty{
+    width: 19vw;
+    font-size: 35px;
+    margin: 20px 5px 20px 5px;
+    padding: 25px;
+  }
+
+  .cheese{
+    width: 19vw;
+    font-size: 35px;
+    margin: 20px 5px 20px 5px;
+    padding: 25px;
+  }
+
+  .skill-icons {
+    font-size: 3rem;
+  }
+
+  .soft-skills{
+    font-size: 3rem;
+  }
+
+  .whole-con{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact-form{
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .J-contact{
+    height: 60vh;
+  }
+
+  .number{
+    margin: 10px 10px 10px 60px;
+  }
+
+  .address{
+    margin: 10px 10px 10px 60px;
+  }
+
+  .Email{
+    margin: 10px 10px 10px 60px;
+  }
+
+  .card-info{
+    font-size: 10px;
+  }
+
+  .project-card{
+    height: 18vh;
+    width: 20vw;
+  }
+
+  .project-container{
+    margin-bottom: 17rem;
+  }
+
+  .project-card img{
+    height: 150%;
+    width: 100%;
   }
 
 }
