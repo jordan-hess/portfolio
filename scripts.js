@@ -18,7 +18,7 @@ let projects = [
         techStack: "HTML/CSS",
         description: " A contact form using neomorphism and formspree.",
         githubURL: "https://github.com/jordan-hess/contact-form.git",
-        liveProjectURL: "#"
+        liveProjectURL: "https://gifted-edison-6a1df8.netlify.app"
     },
     {
         imgURL: "Screenshot from 2021-05-13 12-06-10.png",
@@ -27,7 +27,7 @@ let projects = [
         techStack: "HTML/CSS",
         description: "Timeline using AOS animation and glassmorphism.",
         githubURL: "https://github.com/jordan-hess/my_timeline.git",
-        liveProjectURL: "#"
+        liveProjectURL: "https://sleepy-brahmagupta-5796c4.netlify.app"
     },
     {
         imgURL: "Screenshot from 2021-05-13 11-57-33.png",
@@ -36,7 +36,7 @@ let projects = [
         techStack: "HTML/CSS",
         description: "Testimonials using glassmorphism and javascript.",
         githubURL: "https://github.com/jordan-hess/contact-form.git",
-        liveProjectURL: "#"
+        liveProjectURL: "https://stupefied-curran-93e5af.netlify.app"
     },
     {
         imgURL: "Screenshot 2021-06-23 185323.png",
@@ -45,7 +45,7 @@ let projects = [
         techStack: "Python",
         description: "A Lotto machine created using Python.",
         githubURL: "https://github.com/jordan-hess/python-lotto-numbers.git",
-        liveProjectURL: "#"
+        liveProjectURL: "https://nostalgic-mcnulty-61a68c.netlify.app"
     },
     {
         imgURL: "Screenshot 2021-06-23 193903.png",
@@ -54,7 +54,7 @@ let projects = [
         techStack: "Python",
         description: "Currency converter created using Python.",
         githubURL: "https://github.com/jordan-hess/currency-converter.git",
-        liveProjectURL: "#"
+        liveProjectURL: "https://elastic-tereshkova-3e3ea5.netlify.app"
     },
     {
         imgURL: "Screenshot 2021-06-23 200727.png",
@@ -63,7 +63,7 @@ let projects = [
         techStack: "JavaScript",
         description: "Calculater using javascript.",
         githubURL: "https://github.com/jordan-hess/js-calculator.git",
-        liveProjectURL: "#"
+        liveProjectURL: "https://wizardly-allen-5f5018.netlify.app"
     },
     {
         imgURL: "Screenshot 2021-06-23 204848.png",
@@ -72,16 +72,16 @@ let projects = [
         techStack: "HTML/CSS",
         description: "Sneaker website using HTML and CSS.",
         githubURL: "https://github.com/jordan-hess/Sneaker_Site.git",
-        liveProjectURL: "#"
+        liveProjectURL: "https://happy-shockley-7f91c2.netlify.app"
     },
     {
         imgURL: "Screenshot 2021-06-23 211615.png",
         title: "Temperature converter",
         imgALT: "card-8",
         techStack: "Python",
-        description: "Sneaker website using HTML and CSS.",
+        description: "Temperature converter using python.",
         githubURL: "https://github.com/jordan-hess/temperature_convertor.git",
-        liveProjectURL: "#"
+        liveProjectURL: "https://jolly-hawking-dd7e2d.netlify.app"
     },
 ];
 
