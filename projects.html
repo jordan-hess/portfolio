@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
+  <!-- linking all my css and javascript files  -->
+  <link rel="stylesheet" href="media.css">
   <link rel="stylesheet" href="styles.css" />
-  <!-- <link rel="stylesheet" href="scripts.js" /> -->
+  <link rel="stylesheet" href="scripts.js" />
   <meta charset="UTF-8" />
   <title>Projects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,12 +13,15 @@
 </head>
 
 <body>
+  <!-- this is my navbar -->
   <nav class="navbar">
+    <!-- this burger is for mobile view only -->
     <div class="burger">
       <div class="Line"></div>
       <div class="Line"></div>
       <div class="Line"></div>
     </div>
+    <!-- these links are placed into the texts in te navbar  -->
     <ul class="navbar-links">
       <li>
         <a href="index.html" class="navbar-home">HOME</a>
@@ -38,10 +43,12 @@
       </li>
     </ul>
   </nav>
+  <!-- Projects section -->
   <section>
     <div class="projects">
       <h1>MY PROJECTS</h1>
     </div>
+    <!-- refer to my javascript file to view the full code -->
     <div class="button-container">
       <button onclick="filterCards('All')">All</button>
       <button onclick="filterCards('HTML/CSS')">HTML/CSS</button>
@@ -50,6 +57,7 @@
     </div>
     <div class="project-container"></div>
   </section>
+  <!-- Footer section -->
   <footer>
     <div class="foot">
       <p class="copy">Copy right © By Jordan Hess 2021</p>

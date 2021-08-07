@@ -45,7 +45,7 @@ let projects = [
         techStack: "Python",
         description: "A Lotto machine created using Python.",
         githubURL: "https://github.com/jordan-hess/python-lotto-numbers.git",
-        liveProjectURL: "https://nostalgic-mcnulty-61a68c.netlify.app"
+        liveProjectURL: "https://replit.com/@jordanhess1/python-lotto-numbers#lotto.py"
     },
     {
         imgURL: "Screenshot 2021-06-23 193903.png",
@@ -54,7 +54,7 @@ let projects = [
         techStack: "Python",
         description: "Currency converter created using Python.",
         githubURL: "https://github.com/jordan-hess/currency-converter.git",
-        liveProjectURL: "https://elastic-tereshkova-3e3ea5.netlify.app"
+        liveProjectURL: "https://replit.com/@jordanhess1/currency-converter#main.py"
     },
     {
         imgURL: "Screenshot 2021-06-23 200727.png",
@@ -81,7 +81,7 @@ let projects = [
         techStack: "Python",
         description: "Temperature converter using python.",
         githubURL: "https://github.com/jordan-hess/temperature_convertor.git",
-        liveProjectURL: "https://jolly-hawking-dd7e2d.netlify.app"
+        liveProjectURL: "https://replit.com/@jordanhess1/temperatureconvertor-1#.replit"
     },
 ];
 
@@ -93,8 +93,8 @@ function createCard(card) {
     <h6>${card.techStack}</h6>
     <p>${card.description}</p>
     <div>
-    <a href="${card.githubURL}">Github</a>
-    <a href="${card.liveProjectURL}">Live</a>
+    <a target='_blank' href="${card.githubURL}">Github</a>
+    <a target='_blank' href="${card.liveProjectURL}">Live</a>
     </div>
     </div>
     </div>

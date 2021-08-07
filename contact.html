@@ -6,16 +6,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact</title>
+  <!-- linking css files -->
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
+  <!-- this is my navbar -->
   <nav class="navbar">
+    <!-- this burger is for mobile view only -->
     <div class="burger">
       <div class="Line"></div>
       <div class="Line"></div>
       <div class="Line"></div>
     </div>
+    <!-- these links are placed into the texts in te navbar  -->
     <ul class="navbar-links">
       <li>
         <a href="index.html" class="navbar-home">HOME</a>
@@ -37,11 +42,13 @@
       </li>
     </ul>
   </nav>
+  <!-- Contact form section -->
   <div class="whole-con" style="display: flex">
     <div>
       <form method="POST" action="https://formspree.io/f/mleangpw" id="contact-form">
         <div class="contact-me-info">
           <h1 class="contact-heading">Contact Me</h1>
+          <!-- entries for your information to contact me -->
           <div class="contact-info">
             <label for="name" class="contact-info"></label>
             <input type="text" id="name" required name="name" class="contact-input" placeholder="Full Name" />
@@ -65,6 +72,7 @@
         </div>
       </form>
     </div>
+    <!-- my contact information in case you want to get in touch -->
     <div class="my-contact">
       <div class="my-contact-info">
         <div class="J-contact">
@@ -97,6 +105,7 @@
     </div>
   </div>
   <footer>
+    <!-- footer section -->
     <div class="foot">
       <p class="copy">Copy right © By Jordan Hess 2021</p>
     </div>
